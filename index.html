@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle B Global - Ideas Engineered for Impact</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles based on the provided image */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfaf4; /* The cream/beige background */
+            color: #1a202c;
+        }
+        
+        /* Simulating page transitions */
+        .page {
+            display: none; /* Hide all pages by default */
+        }
+        .page.active {
+            display: block; /* Show the active page */
+        }
+
+        /* Hero section styles */
+        .hero-section {
+            background-color: #2a3d40; /* Dark teal/charcoal from image */
+            /* Using a placeholder image that reflects the subject */
+            background-image: url('https://placehold.co/1200x800/2a3d40/FFFFFF?text=Michelle+B+Global&font=inter');
+            background-size: cover;
+            background-position: center 60%; /* Adjust position */
+            color: white;
+            min-height: 50vh; /* Minimum height for the hero */
+        }
+        
+        .hero-section h1 {
+            font-size: 2.5rem; /* Large text for "Ideas Engineered for Impact" */
+            font-weight: 600;
+            line-height: 1.2;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        /* Replicating image layout */
+        .content-block {
+            background-color: #fcfaf4; /* Cream background for this block */
+            color: #333;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        
+        .content-block h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button-primary {
+            background-color: #4a72b0; /* Blue from image */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.25rem; /* Sharp radius from image */
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button-primary:hover {
+            background-color: #3a5a8a;
+        }
+        
+        .cta-button-secondary {
+            background-color: #8fa0c0; /* Lighter blue */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.25rem;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button-secondary:hover {
+            background-color: #7a8aa3;
+        }
+
+        /* Experience section */
+        .experience-section {
+            background-color: #4a72b0; /* Blue background */
+            color: white;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+        }
+        
+        .experience-section h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .feature-box {
+            background-color: #c04a3c; /* Red from image */
+            color: white;
+            padding: 2rem;
+            min-height: 220px;
+            border-radius: 0.25rem;
+        }
+        
+        .feature-box h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid white;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        
+        /* Logo section */
+        .logo-section {
+            background-color: #fcfaf4;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .logo-section img {
+            max-height: 40px; /* Logo height */
+            filter: grayscale(100%) opacity(0.6);
+            margin: 1rem;
+            transition: filter 0.3s ease;
+        }
+        .logo-section img:hover {
+            filter: grayscale(0%) opacity(1);
+        }
+        
+        /* Substack section */
+        .substack-section {
+            background-color: #eaf0f6; /* Lightest blue/grey */
+            padding-top: 4rem;
+            padding-bottom: 5rem;
+            color: #2c3e50;
+        }
+        .substack-section h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        .substack-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Consulting Page Table Styles */
+        .consulting-table {
+            width: 100%;
+            margin-top: 2rem;
+            border-collapse: collapse;
+        }
+        .consulting-table th, .consulting-table td {
+            border: 1px solid #d1d5db;
+            padding: 1rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        .consulting-table th {
+            background-color: #f3f4f6; /* Light gray header */
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .consulting-table td {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .consulting-table ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-gray-800">
+                MICHELLE B GLOBAL
+            </a>
+            <div class="space-x-6">
+                <a href="#home" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Home</a>
+                <a href="#consulting" class="nav-link text-gray-600 hover:text-gray-900 font-medium">Consulting</a>
+                <a href="#kombragroup" class="nav-link text-gray-600 hover:text-gray-900 font-medium">KombraGroup</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Container -->
+    <main>
+
+        <!-- =========== HOME PAGE =========== -->
+        <div id="home" class="page active">
+            
+            <!-- Hero Section -->
+            <section class="hero-section flex items-end justify-center text-center py-24 px-6">
+                <div class="max-w-4xl">
+                    <h1 class="text-4xl md:text-5xl">Ideas Engineered for Impact</h1>
+                </div>
+            </section>
+
+            <!-- Content Block -->
+            <section class="content-block">
+                <div class="container mx-auto px-6 max-w-3xl text-center">
+                    <h2>THIS ALL HAS TO MEAN SOMETHING...</h2>
+                    <p class="text-lg md:text-xl leading-relaxed">
+                        For Michelle B, meaning is a metric.
+                        From the start, she built her career on the belief that progress must have a purpose. Every decision—discipline, partnership, and problem chosen—has been guided by that principle.
+                        Through her consultancy work and her multidisciplinary venture, KombraGroup, she develops systems and ventures that merge strategy and empathy to prove that intelligent innovation can create measurable, human progress.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+                        <a href="#consulting" class="cta-button-primary">
+                            Michelle B Consulting
+                        </a>
+                        <a href="#kombragroup" class="cta-button-secondary">
+                            KombraGroup
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="experience-section text-center">
+                <div class="container mx-auto px-6">
+                    <h3>Over 20 Years of Expert Industry Experience</h3>
+                    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                        
+                        <!-- Innovation Box -->
+                        <div class="feature-box">
+                            <h4>INNOVATION</h4>
+                            <p class="text-lg">
+                                Applying AI and design thinking to real-world challenges.
+                            </p>
+                        </div>
+                        
+                        <!-- Strategy Box -->
+                        <div class="feature-box">
+                            <h4>STRATEGY</h4>
+                            <p class="text-lg">
+                                Building ventures that are efficient, ethical, and equitable.
+                            </p>
+                        </div>
+                        
+                        <!-- Execution Box -->
+                        <div class="feature-box">
+                            <h4>EXECUTION</h4>
+                            <p class="text-lg">
+                                Turning complexity into clarity and process into progress.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Logo Section -->
+            <section class="logo-section">
+                <div class="container mx-auto px-6">
+                    <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-6">
+                        <!-- Placeholder logos based on image. -->
+                        <img src="https://placehold.co/150x60/fcfaf4/666666?text=US+Coast+Guard" alt="US Coast Guard Logo Placeholder">
+                        <img src="https://placehold.co/100x60/fcfaf4/666666?text=AP" alt="AP Logo Placeholder">
+                        <img src="https://placehold.co/150x60/fcfaf4/666666?text=Salesforce" alt="Salesforce Logo Placeholder">
+                        <img src="https://placehold.co/150x60/fcfaf4/666666?text=Google" alt="Google Logo Placeholder">
+                        <img src="https://placehold.co/100x60/fcfaf4/666666?text=US+Navy" alt="US Navy Logo Placeholder">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Substack Section -->
+            <section class="substack-section text-center">
+                <div class="container mx-auto px-6 max-w-3xl">
+                    <h3>JOIN THE SUBSTACK</h3>
+                    <h2 class="font-serif">The Design of Progress</h2>
+                    <p class="text-lg md:text-xl leading-relaxed mb-8">
+                        Each week, receive Michelle's field journal on building systems that make life work better, exploring strategy, human-centered design, and measurable progress in practice.
+                    </p>
+                    <a href="#" class="cta-button-primary inline-block">
+                        Subscribe
+                    </a>
+                </div>
+            </section>
+
+        </div> <!-- /#home -->
+
+        <!-- =========== CONSULTING PAGE =========== -->
+        <div id="consulting" class="page">
+            <div class="container mx-auto px-6 py-16">
+                <h1 class="text-4xl font-bold mb-4 text-gray-800">Michelle B. Consulting</h1>
+                <p class="text-xl text-gray-600 mb-8">Full-stack strategic guidance, from technology architecture to operational delivery.</p>
+
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Consulting Value Proposition Matrix</h2>
+
+                <div class="overflow-x-auto">
+                    <table class="consulting-table">
+                        <thead>
+                            <tr>
+                                <th>Consulting Domain</th>
+                                <th>Key Assessment Questions (Your Audit)</th>
+                                <th>Strategic Guidance (Your Value)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">1. Strategy & Technology Roadmap</td>
+                                <td>
+                                    <ul>
+                                        <li>Is your technology vision aligned with your business goals?</li>
+                                        <li>Is your roadmap a list of features, or a plan to deliver strategic value?</li>
+                                        <li>Are you building a product when you should be building a platform?</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Roadmap Development:</strong> Aligning engineering efforts with market opportunities.</li>
+                                        <li><strong>Architectural Future-Proofing:</strong> Designing for scale and new verticals.</li>
+                                        <li><strong>Buy vs. Build Analysis:</strong> Identifying what is core IP versus what can be commoditized.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2. Product & Solution Architecture</td>
+                                <td>
+                                    <ul>
+                                        <li>Does your system architecture *actually* support your feature goals?</li>
+                                        <li>Are you creating technical debt?</li>
+                                        <li>How modular, secure, and extensible is your design?</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Solution Architecture:</strong> Designing resilient, multi-tenant, and modular systems (KombraCore model).</li>
+                                        <li><strong>API & Integration Strategy:</strong> Creating a "Lego brick" ecosystem.</li>
+                                        <li><strong>Security & Accessibility by Design:</strong> Building guardrails in, not bolting them on.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">3. Operations & Delivery (The "How")</td>
+                                <td>
+                                    <ul>
+                                        <li>Are your teams properly resourced?</li>
+                                        <li>Are they using the right tools and "delivery rhythms" (Agile, DevOps)?</li>
+                                        <li>What is your "Developer Experience" (DX)? Is it high-friction?</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Process Optimization:</strong> Implementing high-efficiency Agile/DevOps workflows.</li>
+                                        <li><strong>Toolchain & DX Audit:</strong> Assessing and optimizing the end-to-end development lifecycle.</li>
+                                        <li><strong>Team Structuring:</strong> Ensuring the right people are on the right problems.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">4. Quality & User Experience (UX)</td>
+                                <td>
+                                    <ul>
+                                        <li>What is your *comprehensive* testing strategy (unit, integration, E2E, UAT)?</li>
+                                        <li>Are your testing scripts automated?</li>
+                                        <li>Are you auditing the *whole* user experience, from discovery to daily use?</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Holistic QA Strategy:</strong> Moving beyond bug-finding to true quality assurance.</li>
+                                        <li><strong>Test Automation:</strong> Designing and implementing comprehensive test suites.</li>
+                                        <li><strong>UX/UI Audit:</strong> Analyzing the user journey for friction, drop-off, and value.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">5. Data & AI Infrastructure</td>
+                                <td>
+                                    <ul>
+                                        <li>Where does your data come from? Is it accurate?</li>
+                                        <li>Are you asking the *right questions* of your data?</li>
+                                        <li>Is your data infrastructure designed for simple reporting, or true AI-driven insights?</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><strong>Data Governance & Pipeline:</strong> Ensuring data is clean, accurate, and ready for use.</li>
+                                        <li><strong>AI Strategy:</strong> Moving clients from *correlative* AI to *prescriptive* and *generative* AI.</li>
+                                        <li><strong>BI & Reporting:</strong> Auditing reports to ensure they answer the right business questions.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div> <!-- /#consulting -->
+
+        <!-- =========== KOMBRAGROUP PAGE =========== -->
+        <div id="kombragroup" class="page">
+            <div class="container mx-auto px-6 py-16">
+                <h1 class="text-4xl font-bold mb-4 text-gray-800">KombraGroup</h1>
+                <p class="text-xl text-gray-600 mb-8">An AI-driven venture studio that industrializes high-quality company creation.</p>
+
+                <div class="max-w-4xl mx-auto text-gray-700 leading-relaxed space-y-6">
+                    <p class="text-lg">The KombraGroup venture studio exists to industrialize high-quality company creation. In most markets, strong ideas fail because the execution process is fragmented: research lives in one place, strategy in another, product work outsourced, operations improvised, and marketing reactive. The studio solves this fragmentation by building a unified operating system for venture creation—one that integrates strategic insight, cultural intelligence, product design, technical architecture, community engagement, and revenue models into one repeatable process.</p>
+                    
+                    <h2 class="text-2xl font-semibold pt-4">The Work OS: Compounding Efficiency</h2>
+                    <p>The core of the studio is a proprietary Work OS—a structured environment where every insight, decision, playbook, workflow, and experiment is captured and reusable. If one venture figures out the most efficient way to run customer interviews, or the strongest pricing strategy for subscription products, or the best workflow for prototyping MVPs with AI tools, that process becomes a reusable module. Future ventures start further ahead than the previous ones. This creates compounding efficiency: each company strengthens the platform that builds the next.</p>
+                    
+                    <p>AI is used to extend founder capacity rather than replace it. It accelerates research, scenario modeling, operational planning, creative ideation, and knowledge organization. It allows us to prototype quickly, test rapidly, and launch intentionally—without sacrificing depth or care.</p>
+
+                    <h2 class="text-2xl font-semibold pt-4">Market & Pipeline</h2>
+                    <p>Our market focus is purposeful. Many of the spaces where we work—education, community infrastructure, family support, youth enrichment, wellness, and cultural identity—are structurally underserved and full of shallow solutions. There is both a moral and economic inefficiency here: when you solve real human needs with excellence, trust and market traction follow.</p>
+                    
+                    <p>The studio does not take a spray-and-pray approach. We move through a disciplined pipeline:</p>
+                    <ol class="list-decimal pl-8 space-y-2">
+                        <li><strong>Sensing & Insight:</strong> Identifying structural gaps and unmet needs.</li>
+                        <li><strong>Concept Formation:</strong> Generating multiple possible venture angles.</li>
+                        <li><strong>Strategic Scoring:</strong> Evaluating feasibility, market pull, defensibility, and long-term value.</li>
+                        <li><strong>MVP Development:</strong> Prototyping solutions rapidly using the shared toolkit.</li>
+                        <li><strong>Validation & Launch:</strong> Entering the market with stewardship, not hype.</li>
+                        <li><strong>Scale or Archive:</strong> Only scale when signal is strong; otherwise, gracefully close and extract learnings.</li>
+                    </ol>
+                    
+                    <h2 class="text-2xl font-semibold pt-4">Revenue & Ownership Model</h2>
+                    <p>The portfolio functions as a compounding ecosystem. The studio forms each venture with a majority position (60-80%), providing the operating system, research, product acceleration, and early go-to-market. Operators and strategic contributors earn meaningful stakes through milestone-based vesting (10-30%), preserving alignment and accountability. Shared services are operated at internal cost, allowing ventures to scale sustainably. When a venture reaches profitability or outside investment, it graduates into its own P&L but continues to benefit from the shared knowledge base. Studio exits provide reinvestment into future ventures, creating compounding value rather than one-off wins.</p>
+                </div>
+            </div>
+        </div> <!-- /#kombragroup -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Michelle B Global. All rights reserved.</p>
+            <p class="text-sm mt-1">Ideas Engineered for Impact.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Simple JavaScript "Router"
+        function handleHashChange() {
+            // Get all page elements
+            const pages = document.querySelectorAll('.page');
+            // Get the current hash, default to 'home'
+            const hash = window.location.hash.substring(1) || 'home';
+
+            // Hide all pages
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show the active page
+            const activePage = document.getElementById(hash);
+            if (activePage) {
+                activePage.classList.add('active');
+            } else {
+                // Fallback to home if hash is invalid
+                document.getElementById('home').classList.add('active');
+            }
+            
+            // Scroll to top on page change
+            window.scrollTo(0, 0);
+        }
+
+        // Listen for hash changes
+        window.addEventListener('hashchange', handleHashChange);
+        
+        // Also run on initial page load
+        document.addEventListener('DOMContentLoaded', handleHashChange);
+        
+        // Handle nav link clicks to ensure smooth scrolling and hash update
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                
+                // If it's just a hash, let the hashchange event handle it
+                if (href.startsWith('#') && href.length > 1) {
+                    // Let the default hashchange event fire
+                } 
+                // If it's an empty hash or a non-page link, let it behave normally
+                // (e.g., the "Subscribe" button)
+                else if (href === '#') {
+                    e.preventDefault();
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>
