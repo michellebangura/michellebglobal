@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle B Global | Architecting the Future of Africa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        earth: '#D4B895',
+                        sand: '#F7F4F0',
+                        forest: '#2C4C3B',
+                        charcoal: '#222222',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sand text-charcoal font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="absolute w-full z-50 py-6 px-8 flex justify-between items-center mix-blend-difference text-white">
+        <a href="#" class="text-xl font-bold tracking-widest uppercase">MB Global.</a>
+        <a href="mailto:contact@michellebglobal.com" class="text-sm uppercase tracking-widest hover:opacity-75 transition font-semibold border-b border-white pb-1">Get Involved</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen relative flex items-center p-6 md:p-12">
+        <!-- Background Image Placeholder (Replace with actual image of Sierra Leone/Community) -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-forest/80 mix-blend-multiply z-10"></div>
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover grayscale" alt="Africa Landscape">
+        </div>
+        
+        <div class="relative z-20 max-w-5xl mx-auto w-full text-white">
+            <p class="text-earth font-bold tracking-[0.2em] mb-4 uppercase text-sm">Africa Tomorrow Initiative</p>
+            <h1 class="font-serif text-5xl md:text-8xl leading-tight mb-8">
+                Building <br>
+                <span class="italic font-light text-earth">Empowered</span> <br>
+                Communities.
+            </h1>
+            <p class="text-lg md:text-2xl font-light max-w-2xl leading-relaxed text-gray-200">
+                Architecting economically sustainable ecosystems in Sierra Leone—bridging global investment with local tradition to create the communities of the future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="py-24 px-6 md:px-12 bg-white">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2 class="font-serif text-4xl text-forest">Not Charity. Architecture.</h2>
+            <p class="text-lg md:text-xl text-gray-600 font-light leading-relaxed">
+                At Africa Tomorrow, we do not deploy aid. We deploy infrastructure. From integrated land-use solutions supporting aquaculture and agriculture to the structural foundations of residential housing, we negotiate and build systems that generate durable economic profit for local populations.
+            </p>
+            <div class="pt-8 grid md:grid-cols-3 gap-8 text-left">
+                <div class="border-t-2 border-earth pt-4">
+                    <h3 class="font-bold mb-2">Land & Agriculture</h3>
+                    <p class="text-sm text-gray-500">Integrated aquaculture, livestock, and community-owned farming models that scale sustainably.</p>
+                </div>
+                <div class="border-t-2 border-earth pt-4">
+                    <h3 class="font-bold mb-2">Cross-Cultural Literacy</h3>
+                    <p class="text-sm text-gray-500">Analog training frameworks designed to overcome zero-digital-literacy boundaries.</p>
+                </div>
+                <div class="border-t-2 border-earth pt-4">
+                    <h3 class="font-bold mb-2">Diplomatic Governance</h3>
+                    <p class="text-sm text-gray-500">De-escalating land disputes via direct negotiation with paramount chiefs and tribal leadership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Action -->
+    <section class="py-32 px-6 bg-forest text-white text-center">
+        <h2 class="font-serif text-4xl md:text-5xl mb-6">Invest in the Foundation</h2>
+        <p class="text-earth text-lg mb-10 max-w-xl mx-auto font-light">Join us in architecting sustainable development models across West Africa. We are currently scaling our operations in Sierra Leone.</p>
+        <a href="mailto:contact@michellebglobal.com" class="inline-block bg-white text-forest px-8 py-4 font-bold tracking-wider uppercase text-sm hover:bg-earth transition shadow-lg">Partner With Us</a>
+    </section>
+
+</body>
+</html>
