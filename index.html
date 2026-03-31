@@ -125,15 +125,15 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
 <body>
 
 <nav>
-  <a href="#" class="nav-mark" onclick="showPage('home')">michelle bangura</a>
+  <a href="javascript:void(0)" class="nav-mark" onclick="event.preventDefault();showPage('home')">michelle bangura</a>
   <ul class="nav-links">
-    <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
-    <li><a href="#" onclick="showPage('build')" id="nav-build">What I build</a></li>
-    <li><a href="#" onclick="showPage('work')" id="nav-work">Project portfolio</a></li>
-    <li><a href="#" onclick="showPage('about')" id="nav-about">About</a></li>
-    <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('home')" class="active" id="nav-home">Home</a></li>
+    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('build')" id="nav-build">What I build</a></li>
+    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('work')" id="nav-work">Project portfolio</a></li>
+    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('about')" id="nav-about">About</a></li>
+    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('contact')" id="nav-contact">Contact</a></li>
   </ul>
-  <a href="#" class="nav-cta" onclick="showPage('contact')">Let's talk</a>
+  <a href="javascript:void(0)" class="nav-cta" onclick="event.preventDefault();showPage('contact')">Let's talk</a>
   <button class="menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></button>
 </nav>
 
@@ -144,7 +144,7 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
       <div class="hero-content">
         <h1>I build systems that work for people.</h1>
         <p>20 years operating, building, and founding across 4 continents and 52 countries. From $40M government modernizations to venture creation to sustainable communities in West Africa.</p>
-        <a href="#" class="hero-cta" onclick="showPage('contact')">Let's talk &rarr;</a>
+        <a href="javascript:void(0)" class="hero-cta" onclick="event.preventDefault();showPage('contact')">Let's talk &rarr;</a>
       </div>
     </div>
   </section>
@@ -204,7 +204,6 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
         <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">Then I align the entire team on why the solution is excellent, how to communicate that to the customer, and how to integrate it into existing operations with the least friction. No one is left behind in the journey toward modernization. That's why every competitive proposal I've led has made the shortlist.</p>
       </div>
 
-      </div>
     </div>
   </section>
 </div>
@@ -233,7 +232,7 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
         "I've architected regulated platforms handling hundreds of millions of records, built real-time pricing engines and fraud detection systems, and designed civic technology used by millions. I now apply that same rigor to building my own ventures."
       </div>
 
-      <p class="section-intro">If you're interested in what Kombra Group is building, or in backing a founder who operates at the intersection of enterprise architecture, AI, and human-centered design &mdash; <a href="#" onclick="showPage('contact')" style="color:var(--copper)">let's have that conversation</a>.</p>
+      <p class="section-intro">If you're interested in what Kombra Group is building, or in backing a founder who operates at the intersection of enterprise architecture, AI, and human-centered design &mdash; <a href="javascript:void(0)" onclick="event.preventDefault();showPage('contact')" style="color:var(--copper)">let's have that conversation</a>.</p>
     </div>
   </section>
 </div>
@@ -413,7 +412,7 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
 
         <p><strong>Reach:</strong> 52 countries. 4 continents. I operate globally and am raising a child across multiple continents &mdash; the most challenging and rewarding operations problem of my career.</p>
 
-        <p style="margin-top:2rem"><a href="#" onclick="showPage('contact')" style="color:var(--copper);font-weight:500">Get in touch &rarr;</a> &nbsp;&nbsp; <a href="https://kombra.group" style="color:var(--copper);font-weight:500" target="_blank">Kombra Group &rarr;</a></p>
+        <p style="margin-top:2rem"><a href="javascript:void(0)" onclick="event.preventDefault();showPage('contact')" style="color:var(--copper);font-weight:500">Get in touch &rarr;</a> &nbsp;&nbsp; <a href="https://kombragroup.com" style="color:var(--copper);font-weight:500" target="_blank">Kombra Group &rarr;</a></p>
       </div>
     </div>
   </section>
@@ -431,7 +430,11 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
         <div>
           <div class="contact-method">
             <label>Email</label>
-            <a href="/cdn-cgi/l/email-protection#98f0fdf4f4f7d8f5f1fbf0fdf4f4fdfafff4f7faf9f4b6fbf7f5"><span class="__cf_email__" data-cfemail="f69e939a9a99b69b9f959e939a9a9394919a9994979ad895999b">[email&#160;protected]</span></a>
+            <a href="mailto:michelle@michellebglobal.com">michelle@michellebglobal.com</a>
+          </div>
+          <div class="contact-method">
+            <label>Phone</label>
+            <span>+1 415-226-9566</span>
           </div>
           <div class="contact-method">
             <label>LinkedIn</label>
@@ -439,7 +442,7 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
           </div>
           <div class="contact-method">
             <label>Consulting practice</label>
-            <a href="https://kombra.group" target="_blank">kombra.group</a>
+            <a href="https://kombragroup.com" target="_blank">kombragroup.com</a>
           </div>
         </div>
         <div>
@@ -480,12 +483,12 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
   <div class="container">
     <div class="footer-name">Michelle Bangura</div>
     <p>Operator &middot; Builder &middot; Founder</p>
-    <p style="margin-top:.75rem"><a href="https://kombra.group" target="_blank">Kombra Group</a> &nbsp;&middot;&nbsp; <a href="https://linkedin.com/in/michellebangura" target="_blank">LinkedIn</a></p>
+    <p style="margin-top:.75rem"><a href="https://kombragroup.com" target="_blank">Kombra Group</a> &nbsp;&middot;&nbsp; <a href="https://linkedin.com/in/michellebangura" target="_blank">LinkedIn</a></p>
     <p style="margin-top:1rem;font-size:.7rem">&copy; 2026 Michelle Bangura. All rights reserved.</p>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function showPage(id){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.getElementById('page-'+id).classList.add('active');
@@ -496,5 +499,37 @@ function showPage(id){
 }
 function toggleMenu(){
   const links=document.querySelector('.nav-links');
-  if(links.style.display==='flex'){links.style.display='none'}
-  else{links.style.display='flex';links.style.flexDirection='column';links.style.position='absolu
+  const btn=document.querySelector('.menu-btn');
+  if(links.classList.contains('open')){
+    links.classList.remove('open');
+    links.style.display='none';
+    btn.classList.remove('open');
+  } else {
+    links.classList.add('open');
+    links.style.display='flex';
+    links.style.flexDirection='column';
+    links.style.position='absolute';
+    links.style.top='100%';
+    links.style.left='0';
+    links.style.right='0';
+    links.style.background='var(--warm-white)';
+    links.style.padding='1.5rem';
+    links.style.gap='1rem';
+    links.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';
+    btn.classList.add('open');
+  }
+}
+document.querySelectorAll('.nav-links a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    const links=document.querySelector('.nav-links');
+    const btn=document.querySelector('.menu-btn');
+    if(window.innerWidth<768){
+      links.classList.remove('open');
+      links.style.display='none';
+      btn.classList.remove('open');
+    }
+  });
+});
+</script>
+</body>
+</html>
