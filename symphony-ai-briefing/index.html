@@ -54,6 +54,11 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
 .contact-bar a{color:var(--copper);font-weight:600;text-decoration:none}
 .contact-bar .phone{font-size:1.1rem;color:var(--navy);font-weight:600;margin-bottom:.5rem}
 
+.audio-brief{background:var(--navy);padding:1.5rem 2rem;margin-bottom:0}
+.audio-brief .audio-label{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--copper);margin-bottom:.5rem}
+.audio-brief p{font-size:.8rem;color:rgba(247,244,239,.6);margin-top:.5rem}
+.audio-brief audio{width:100%;margin-top:.75rem;border-radius:4px;accent-color:var(--copper)}
+
 @media(max-width:600px){
   .hero h1{font-size:1.5rem}
   .downloads{flex-direction:column}
@@ -64,6 +69,17 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
 <body>
 
 <div class="topbar"><span>PREPARED FOR SYMPHONYAI &mdash; CONFIDENTIAL</span></div>
+
+<div class="audio-brief">
+  <div class="container">
+    <div class="audio-label">Listen First</div>
+    <audio controls preload="metadata">
+      <source src="/assets/SymphonyAI_ServiceNow_Displacement_Playbook.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+    <p>SymphonyAI &mdash; ServiceNow Displacement Playbook &middot; Michelle Bangura</p>
+  </div>
+</div>
 
 <div class="container">
 
