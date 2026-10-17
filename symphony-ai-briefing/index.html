@@ -4,11 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>SymphonyAI Enterprise Briefing — Michelle Bangura</title>
+<title>SymphonyAI Enterprise Briefing | Michelle Bangura</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--navy:#1B2A4A;--copper:#B87333;--copper-light:#D4955A;--sand:#D4C5A9;--warm-white:#F7F4EF;--charcoal:#3D3D3A;--warm-gray:#8B8880;--font-display:'DM Serif Display',Georgia,serif;--font-body:'Instrument Sans','Segoe UI',sans-serif}
+:root{--navy:#1B2A4A;--copper:#965820;--copper-dark:#7A4517;--copper-light:#D4955A;--sand:#D4C5A9;--warm-white:#F7F4EF;--charcoal:#3D3D3A;--warm-gray:#6B6860;--font-display:'DM Serif Display',Georgia,serif;--font-body:'Instrument Sans','Segoe UI',sans-serif}
 body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-white);line-height:1.7;-webkit-font-smoothing:antialiased}
 .container{max-width:720px;margin:0 auto;padding:0 2rem}
 .topbar{background:var(--navy);padding:1rem 2rem;text-align:center}
@@ -36,12 +41,12 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
 .ace p{color:rgba(247,244,239,.85);font-size:.9rem;margin-bottom:.75rem}
 .ace .title-list{margin:1.25rem 0;padding-left:0;list-style:none}
 .ace .title-list li{padding:.5rem 0;border-bottom:1px solid rgba(247,244,239,.12);font-family:var(--font-display);color:var(--copper-light);font-size:1.05rem}
-.ace .title-list li span{display:block;font-family:var(--font-body);font-size:.8rem;color:rgba(247,244,239,.6);margin-top:.2rem;font-style:italic}
+.ace .title-list li span{display:block;font-family:var(--font-body);font-size:.8rem;color:rgba(247,244,239,.75);margin-top:.2rem;font-style:italic}
 
 .downloads{display:flex;gap:1rem;margin:2rem 0;flex-wrap:wrap}
 .dl-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:.85rem;transition:all .2s}
 .dl-primary{background:var(--copper);color:var(--warm-white)}
-.dl-primary:hover{background:var(--copper-light)}
+.dl-primary:hover{background:var(--copper-dark)}
 .dl-secondary{background:transparent;color:var(--navy);border:2px solid var(--navy)}
 .dl-secondary:hover{background:var(--navy);color:var(--warm-white)}
 
@@ -55,11 +60,17 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
 .contact-bar .phone{font-size:1.1rem;color:var(--navy);font-weight:600;margin-bottom:.5rem}
 
 .audio-brief{background:var(--navy);padding:1.5rem 2rem;margin-bottom:0}
-.audio-brief .audio-label{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--copper);margin-bottom:.5rem}
-.audio-brief p{font-size:.8rem;color:rgba(247,244,239,.6);margin-top:.5rem}
+.audio-brief .audio-label{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--copper-light);margin-bottom:.5rem}
+.audio-brief p{font-size:.8rem;color:rgba(247,244,239,.75);margin-top:.5rem}
 .audio-brief audio{width:100%;margin-top:.75rem;border-radius:4px;accent-color:var(--copper)}
 
+a:focus-visible{outline:2px solid var(--copper);outline-offset:3px;border-radius:2px}
+.audio-brief a:focus-visible,.ace a:focus-visible{outline-color:var(--copper-light)}
+.matrix-wrap{overflow-x:auto}
 @media(max-width:600px){
+  .container{padding:0 1rem}
+  .synthesis{padding:1.25rem}
+  .ace{padding:1.5rem}
   .hero h1{font-size:1.5rem}
   .downloads{flex-direction:column}
   .matrix td:first-child{white-space:normal}
@@ -68,20 +79,20 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
 </head>
 <body>
 
-<div class="topbar"><span>PREPARED FOR SYMPHONYAI &mdash; CONFIDENTIAL</span></div>
+<header class="topbar"><span>PREPARED FOR SYMPHONYAI &middot; CONFIDENTIAL</span></header>
 
 <div class="audio-brief">
   <div class="container">
     <div class="audio-label">Listen First</div>
-    <audio controls preload="metadata">
+    <audio controls preload="metadata" aria-label="Audio briefing: SymphonyAI ServiceNow Displacement Playbook">
       <source src="/assets/Revenue_Architecture_for_ServiceNow_Displacement.m4a" type="audio/mp4">
       Your browser does not support the audio element.
     </audio>
-    <p>SymphonyAI &mdash; ServiceNow Displacement Playbook &middot; Michelle Bangura</p>
+    <p>SymphonyAI: ServiceNow Displacement Playbook &middot; Michelle Bangura</p>
   </div>
 </div>
 
-<div class="container">
+<main class="container" id="main">
 
   <div class="hero">
     <div class="label">Enterprise Briefing</div>
@@ -92,7 +103,7 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
   <div class="section">
     <h2>The answer wasn't "fill the VP Sales seat."</h2>
     <div class="synthesis">
-      <p>The answer was: <strong>run the diagnostic that identifies exactly where your revenue architecture is creating friction &mdash; then build the framework to resolve it.</strong></p>
+      <p>The answer was: <strong>run the diagnostic that identifies exactly where your revenue architecture is creating friction, then build the framework to resolve it.</strong></p>
       <p>In 20 years of enterprise technology work, I've seen AI platform companies lose deals to incumbents for five recurring reasons. I don't know which apply to SymphonyAI. That's what the engagement finds out. What I'm confident about is that whatever the friction points are, a structured diagnostic will surface them and the playbook to resolve them will follow.</p>
       <p>Six weeks. $40,000. Sixteen deliverables. The engagement pays for itself with a single deal your team would have otherwise lost.</p>
     </div>
@@ -100,42 +111,42 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
 
   <div class="section">
     <h2>How my methodology maps to your problem</h2>
-    <p style="font-size:.9rem;color:var(--warm-gray);margin-bottom:1rem">I built a system that takes a complex entity, reverse-engineers it against market requirements, translates the vocabulary, and produces an asset that forces a buying decision. The system is universal &mdash; the application shifts.</p>
-    <table class="matrix">
-      <tr><th>My System</th><th>Your Application</th></tr>
+    <p style="font-size:.9rem;color:var(--warm-gray);margin-bottom:1rem">I built a system that takes a complex entity, reverse-engineers it against market requirements, translates the vocabulary, and produces an asset that forces a buying decision. The system is universal. The application shifts.</p>
+    <div class="matrix-wrap"><table class="matrix">
+      <thead><tr><th scope="col">My System</th><th scope="col">Your Application</th></tr></thead>
       <tr><td>Assessment routing</td><td>Automated customer qualification &amp; ICP scoring engine</td></tr>
       <tr><td>Discovery framework</td><td>Enterprise diagnostic normalizing multi-stakeholder data into a single source of truth</td></tr>
       <tr><td>Tiered monetization</td><td>Deal architecture &amp; pricing strategy mapped to buyer personas</td></tr>
       <tr><td>Displacement narrative</td><td>Battlecards &amp; objection-handling architecture to dismantle ServiceNow's incumbency</td></tr>
-      <tr><td>Multi-agent production</td><td>AI-native sales enablement &mdash; autonomous agents for research, scoping, proposal generation</td></tr>
-    </table>
+      <tr><td>Multi-agent production</td><td>AI-native sales enablement: autonomous agents for research, scoping, proposal generation</td></tr>
+    </table></div>
   </div>
 
   <div class="section">
     <h2>Five patterns I'd test first</h2>
     <p style="font-size:.9rem;color:var(--warm-gray);margin-bottom:1.25rem">These are the most common revenue architecture failures in AI platform companies competing against entrenched incumbents. I don't know which apply to SymphonyAI. The diagnostic finds out.</p>
-    <div style="margin-bottom:.75rem"><strong style="color:var(--navy)">1. AI value translation gap</strong><span style="display:block;font-size:.88rem;color:var(--charcoal);margin-top:.2rem">Product positioned as "AI-first" but buyer needs CFO-grade economics &mdash; cost reduction models, ticket deflection rates, MTTR improvements. Conceptual AI stories fail procurement scrutiny.</span></div>
+    <div style="margin-bottom:.75rem"><strong style="color:var(--navy)">1. AI value translation gap</strong><span style="display:block;font-size:.88rem;color:var(--charcoal);margin-top:.2rem">Product positioned as "AI-first" but buyer needs CFO-grade economics: cost reduction models, ticket deflection rates, MTTR improvements. Conceptual AI stories fail procurement scrutiny.</span></div>
     <div style="margin-bottom:.75rem"><strong style="color:var(--navy)">2. ICP drift</strong><span style="display:block;font-size:.88rem;color:var(--charcoal);margin-top:.2rem">Broad enterprise targeting without enforced segmentation by IT maturity, existing stack, automation readiness, or contract timing. Pipeline inflates. Conversion drops.</span></div>
-    <div style="margin-bottom:.75rem"><strong style="color:var(--navy)">3. Competitive framing as feature comparison</strong><span style="display:block;font-size:.88rem;color:var(--charcoal);margin-top:.2rem">ServiceNow wins feature comparisons &mdash; they've had 20 years. Displacement requires reframing as an economic replacement decision: total cost of ownership, time-to-value, organizational cost of staying.</span></div>
+    <div style="margin-bottom:.75rem"><strong style="color:var(--navy)">3. Competitive framing as feature comparison</strong><span style="display:block;font-size:.88rem;color:var(--charcoal);margin-top:.2rem">ServiceNow wins feature comparisons. They've had 20 years. Displacement requires reframing as an economic replacement decision: total cost of ownership, time-to-value, organizational cost of staying.</span></div>
     <div style="margin-bottom:.75rem"><strong style="color:var(--navy)">4. Sales motion inconsistency</strong><span style="display:block;font-size:.88rem;color:var(--charcoal);margin-top:.2rem">Without standardized discovery, demo choreography, and deal architecture, every rep tells a different story. Inconsistency kills velocity and makes forecasting unreliable.</span></div>
     <div style="margin-bottom:.75rem"><strong style="color:var(--navy)">5. Slow feedback loops</strong><span style="display:block;font-size:.88rem;color:var(--charcoal);margin-top:.2rem">Win/loss insights take months to reach the people who can act on them. Messaging, positioning, and objection handling don't iterate fast enough.</span></div>
   </div>
 
   <div class="section" style="border-top:none;padding-top:1rem">
     <h2 style="font-size:1.15rem">How the diagnostic actually works</h2>
-    <p style="font-size:.9rem;color:var(--warm-gray);margin-bottom:1rem">I don't start with the pipeline. I start with the people. I read every job description across the sales and delivery pipeline. I map the workflow &mdash; who creates what, when, for whom, and how information moves between teams. I find the gaps between what people think they own and what the process actually needs from them. That's where deals die. Not in the CRM. In the handoffs.</p>
-    <p style="font-size:.9rem;color:var(--warm-gray)">Then I rebuild the workflow with explicit ownership at every step. Clear roles, clear handoffs, clear decision rights. The framework that comes out of the diagnostic isn't a strategy deck &mdash; it's an operating system your team can execute against without me in the room.</p>
+    <p style="font-size:.9rem;color:var(--warm-gray);margin-bottom:1rem">I don't start with the pipeline. I start with the people. I read every job description across the sales and delivery pipeline. I map the workflow: who creates what, when, for whom, and how information moves between teams. I find the gaps between what people think they own and what the process actually needs from them. That's where deals die. Not in the CRM. In the handoffs.</p>
+    <p style="font-size:.9rem;color:var(--warm-gray)">Then I rebuild the workflow with explicit ownership at every step. Clear roles, clear handoffs, clear decision rights. The framework that comes out of the diagnostic isn't a strategy deck. It's an operating system your team can execute against without me in the room.</p>
   </div>
 
   <div class="section">
     <h2>What the engagement delivers</h2>
-    <table class="matrix">
-      <tr><th>Week</th><th>Deliverables</th></tr>
-      <tr><td>1&ndash;2</td><td>Sales motion diagnostic. Rep interviews. Collateral audit. Friction map &mdash; where deals die and why.</td></tr>
+    <div class="matrix-wrap"><table class="matrix">
+      <thead><tr><th scope="col">Week</th><th scope="col">Deliverables</th></tr></thead>
+      <tr><td>1&ndash;2</td><td>Sales motion diagnostic. Rep interviews. Collateral audit. Friction map: where deals die and why.</td></tr>
       <tr><td>3&ndash;4</td><td>Displacement playbook (40-60 pages). Discovery question bank (100+ questions). Demo choreography. ICP scoring matrix.</td></tr>
       <tr><td>5</td><td>8 competitive battlecards. 5 buyer persona profiles with objection matrices. AI-native sales process map with prompt templates.</td></tr>
       <tr><td>6</td><td>3-hour team enablement session. 90-day execution plan. Measurement dashboard. Hiring recommendation for the VP seat.</td></tr>
-    </table>
+    </table></div>
     <p style="margin-top:1rem;font-size:.9rem;color:var(--warm-gray)"><strong>ROI:</strong> 4 reps &times; $2M quota = $8M target. +10pp win rate against ServiceNow = $2.76M incremental ARR. Investment: $40K. Return: 69:1.</p>
   </div>
 
@@ -149,7 +160,7 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
       <li>The Change Leader's Workbook<span>Leading your team through a transformation you didn't design</span></li>
     </ul>
     <p style="margin-top:1rem">100 deployments/year &times; 1,175 employees &times; $8 wholesale = <strong>$940K/year recurring channel revenue.</strong></p>
-    <p style="font-size:.8rem;color:rgba(247,244,239,.5);margin-top:1rem">The consulting engagement builds the displacement playbook. The book channel provides the adoption tools. Together: a complete enterprise AI sales and deployment solution.</p>
+    <p style="font-size:.8rem;color:rgba(247,244,239,.75);margin-top:1rem">The consulting engagement builds the displacement playbook. The book channel provides the adoption tools. Together: a complete enterprise AI sales and deployment solution.</p>
   </div>
 
   <div class="manifesto">
@@ -162,18 +173,18 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
     <h2>Downloads</h2>
     <div class="downloads">
       <a href="/assets/SymphonyAI_LeaveBehind.pdf" class="dl-btn dl-primary">&darr; Engagement Proposal (PDF)</a>
-      <a href="/assets/Michelle Bangura Resume.pdf" class="dl-btn dl-secondary">&darr; Resume &mdash; Enterprise Sales</a>
+      <a href="/assets/Michelle%20Bangura%20Resume.pdf" class="dl-btn dl-secondary">&darr; Resume: Enterprise Sales (PDF)</a>
     </div>
     <p style="font-size:.8rem;color:var(--warm-gray);margin-top:.5rem">Proposal: 6-week engagement, deliverables, pricing, ROI. Resume: 20 years enterprise architecture, sales, and AI operations.</p>
   </div>
 
   <div class="contact-bar">
-    <p class="phone">+1 415-226-9566</p>
+    <p class="phone"><a href="tel:+14152269566" style="color:inherit">+1 415-226-9566</a></p>
     <p><a href="mailto:michelle@michellebglobal.com">michelle@michellebglobal.com</a></p>
     <p style="margin-top:.5rem"><a href="https://michellebglobal.com">michellebglobal.com</a> &nbsp;&middot;&nbsp; <a href="https://kombragroup.com">kombragroup.com</a></p>
-    <p style="margin-top:1rem;font-size:.75rem;color:var(--sand)">Kombra Group Inc. &middot; Delaware C-Corp &middot; SAM.gov Registered</p>
+    <p style="margin-top:1rem;font-size:.75rem;color:var(--warm-gray)">Kombra Group Inc. &middot; Delaware C-Corp &middot; SAM.gov Registered</p>
   </div>
 
-</div>
+</main>
 </body>
 </html>
