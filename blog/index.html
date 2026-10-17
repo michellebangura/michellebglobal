@@ -3,20 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog — Michelle Bangura</title>
+<title>Blog | Michelle Bangura</title>
 <meta name="description" content="Writing on AI enterprise sales, operational architecture, governance, and the human systems that make organizations work.">
-<meta property="og:title" content="Blog — Michelle Bangura">
+<meta property="og:title" content="Blog | Michelle Bangura">
 <meta property="og:description" content="Writing on AI enterprise sales, operational architecture, governance, and the human systems that make organizations work.">
 <meta property="og:type" content="website">
+<meta name="author" content="Michelle Bangura">
+<link rel="canonical" href="https://michellebglobal.com/blog/">
+<meta name="theme-color" content="#1B2A4A">
+<meta property="og:site_name" content="Michelle Bangura">
+<meta property="og:url" content="https://michellebglobal.com/blog/">
+<meta property="og:image" content="https://michellebglobal.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog | Michelle Bangura">
+<meta name="twitter:description" content="Writing on AI enterprise sales, operational architecture, governance, and the human systems that make organizations work.">
+<meta name="twitter:image" content="https://michellebglobal.com/assets/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Blog", "name": "Blog | Michelle Bangura", "description": "Writing on AI enterprise sales, operational architecture, governance, and the human systems that make organizations work.", "url": "https://michellebglobal.com/blog/", "author": {"@type": "Person", "name": "Michelle Bangura", "url": "https://michellebglobal.com/"}, "image": "https://michellebglobal.com/assets/og-image.png"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--navy:#1B2A4A;--copper:#B87333;--warm-white:#F7F4EF;--charcoal:#3D3D3A;--warm-gray:#8B8880;--sand:#D4C5A9;--font-display:'DM Serif Display',Georgia,serif;--font-body:'Instrument Sans','Segoe UI',sans-serif}
+:root{--navy:#1B2A4A;--copper:#965820;--copper-light:#D4955A;--warm-white:#F7F4EF;--charcoal:#3D3D3A;--warm-gray:#6B6860;--sand:#D4C5A9;--font-display:'DM Serif Display',Georgia,serif;--font-body:'Instrument Sans','Segoe UI',sans-serif}
 body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-white);line-height:1.8;-webkit-font-smoothing:antialiased}
 .topbar{background:var(--navy);padding:.75rem 2rem;display:flex;justify-content:space-between;align-items:center}
 .topbar a{font-family:var(--font-display);color:rgba(255,255,255,.9);text-decoration:none;font-size:.95rem}
-.topbar nav a{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.5);margin-left:1.5rem}
-.topbar nav a:hover{color:var(--copper)}
+.topbar nav a{font-family:var(--font-body);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.5);margin-left:1.5rem}
+.topbar nav a:hover{color:var(--copper-light)}
 .listing{max-width:680px;margin:0 auto;padding:4rem 2rem 3rem}
 .listing h1{font-family:var(--font-display);font-size:2.2rem;color:var(--navy);margin-bottom:.5rem;font-weight:400}
 .listing .intro{font-size:1rem;color:var(--warm-gray);margin-bottom:3rem;padding-bottom:1.5rem;border-bottom:1px solid var(--sand)}
@@ -31,18 +51,29 @@ body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-wh
 .post-link:hover{text-decoration:underline}
 footer{text-align:center;padding:2rem;font-size:.75rem;color:var(--warm-gray);border-top:1px solid var(--sand);margin-top:2rem}
 footer a{color:var(--copper);text-decoration:none}
+a:focus-visible{outline:2px solid var(--copper);outline-offset:3px;border-radius:2px}
+.topbar a:focus-visible{outline-color:var(--copper-light)}
+.skip-link{position:absolute;left:1rem;top:-100px;z-index:200;background:var(--copper);color:#fff!important;padding:.6rem 1rem;border-radius:4px;font-family:var(--font-body)!important;font-weight:600}
+.skip-link:focus{top:.75rem}
+@media(max-width:600px){
+  .topbar{flex-wrap:wrap;gap:.25rem 1rem;padding:.75rem 1rem}
+  .topbar nav a{margin-left:0;margin-right:1.25rem;display:inline-block;padding:.35rem 0}
+  article,.listing{padding:2.5rem 1rem 2rem}
+  article h1{font-size:1.65rem}
+}
 </style>
 </head>
 <body>
-<div class="topbar">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
   <a href="/">michelle bangura</a>
-  <nav>
+  <nav aria-label="Main">
     <a href="/">Home</a>
-    <a href="/blog/">Blog</a>
+    <a href="/blog/" aria-current="page">Blog</a>
     <a href="https://kombragroup.com">Kombra Group</a>
   </nav>
-</div>
-<div class="listing">
+</header>
+<main id="main" class="listing">
   <h1>Writing</h1>
   <p class="intro">On AI enterprise sales, operational architecture, governance, and the human systems that make organizations work.</p>
 
@@ -50,44 +81,44 @@ footer a{color:var(--copper);text-decoration:none}
     <h2><a href="/blog/five-patterns.html">Five Revenue Architecture Failures I See in Every AI Platform Company</a></h2>
     <div class="post-meta">April 2026 · 5 min read</div>
     <p class="post-excerpt">I've spent 20 years on the sell side of enterprise technology. In the last two years, I've watched the AI platform market repeat the same five mistakes. These aren't SaaS problems. They're human-system problems wearing a technology costume.</p>
-    <a href="/blog/five-patterns.html" class="post-link">Read &rarr;</a>
+    <a href="/blog/five-patterns.html" class="post-link" aria-label="Read: Five Revenue Architecture Failures I See in Every AI Platform Company">Read &rarr;</a>
   </div>
 
   <div class="post-item">
     <h2><a href="/blog/diagnosis-is-the-sale.html">The Diagnosis is the Sale</a></h2>
     <div class="post-meta">April 2026 · 3 min read</div>
     <p class="post-excerpt">Enterprise sales teams spend millions on pitch decks, battle cards, and competitive feature matrices. Then they lose the deal to the one vendor who diagnosed.</p>
-    <a href="/blog/diagnosis-is-the-sale.html" class="post-link">Read &rarr;</a>
+    <a href="/blog/diagnosis-is-the-sale.html" class="post-link" aria-label="Read: The Diagnosis is the Sale">Read &rarr;</a>
   </div>
 
   <div class="post-item">
     <h2><a href="/blog/40-hour-w2-fallacy.html">The Fallacy of the 40-Hour W2 in Enterprise Architecture</a></h2>
     <div class="post-meta">April 2026 · 4 min read</div>
     <p class="post-excerpt">A company posts a VP of Sales role. $250K base, $400K+ OTE. They will spend $400-500K in year-one fully loaded cost. Here's the question nobody asks.</p>
-    <a href="/blog/40-hour-w2-fallacy.html" class="post-link">Read &rarr;</a>
+    <a href="/blog/40-hour-w2-fallacy.html" class="post-link" aria-label="Read: The Fallacy of the 40-Hour W2 in Enterprise Architecture">Read &rarr;</a>
   </div>
 
   <div class="post-item">
     <h2><a href="/blog/ai-governance-no-layer.html">AI Governance and The "No" Layer</a></h2>
     <div class="post-meta">April 2026 · 3 min read</div>
     <p class="post-excerpt">Every organization deploying AI into production needs someone whose primary job is saying no. Not "no, we can't innovate." No as in: that model hasn't been validated against production data.</p>
-    <a href="/blog/ai-governance-no-layer.html" class="post-link">Read &rarr;</a>
+    <a href="/blog/ai-governance-no-layer.html" class="post-link" aria-label="Read: AI Governance and The &quot;No&quot; Layer">Read &rarr;</a>
   </div>
 
   <div class="post-item">
     <h2><a href="/blog/process-waste-into-pipeline.html">Turning Process Waste into Pipeline</a></h2>
     <div class="post-meta">April 2026 · 3 min read</div>
     <p class="post-excerpt">Every enterprise has operational waste hiding in plain sight. Most consultants see this waste and sell a "process optimization" engagement. That misses the bigger opportunity.</p>
-    <a href="/blog/process-waste-into-pipeline.html" class="post-link">Read &rarr;</a>
+    <a href="/blog/process-waste-into-pipeline.html" class="post-link" aria-label="Read: Turning Process Waste into Pipeline">Read &rarr;</a>
   </div>
 
   <div class="post-item">
     <h2><a href="/blog/equity-metrics-ai.html">Equity Metrics in Global AI Deployments</a></h2>
     <div class="post-meta">April 2026 · 3 min read</div>
     <p class="post-excerpt">There's a conversation happening in enterprise AI that most vendors are avoiding: what happens to the people the AI was supposed to help when the AI is optimized exclusively for efficiency?</p>
-    <a href="/blog/equity-metrics-ai.html" class="post-link">Read &rarr;</a>
+    <a href="/blog/equity-metrics-ai.html" class="post-link" aria-label="Read: Equity Metrics in Global AI Deployments">Read &rarr;</a>
   </div>
-</div>
+</main>
 <footer>
   <a href="/">michellebglobal.com</a> · <a href="https://kombragroup.com">kombragroup.com</a> · <a href="mailto:michelle@michellebglobal.com">michelle@michellebglobal.com</a>
 </footer>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://michellebglobal.com/sitemap.xml

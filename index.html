@@ -3,32 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Michelle Bangura — Builder · Founder</title>
-<meta property="og:title" content="Michelle Bangura — Builder · Founder">
+<title>Michelle Bangura | Builder and Founder</title>
+<meta name="description" content="Michelle Bangura builds systems that work for people. 20 years operating across 4 continents. Founder of Kombra Group, Purpose Built Press (1,200+ titles), and Name It First.">
+<meta name="author" content="Michelle Bangura">
+<link rel="canonical" href="https://michellebglobal.com/">
+<meta name="theme-color" content="#1B2A4A">
+<meta property="og:site_name" content="Michelle Bangura">
+<meta property="og:title" content="Michelle Bangura | Builder and Founder">
 <meta property="og:description" content="I build systems that work for people. 20 years operating across 4 continents. Founded Kombra Group, Purpose Built Press (1,200+ titles), and Name It First. The name is the work.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://michellebglobal.com">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://michellebglobal.com/">
+<meta property="og:image" content="https://michellebglobal.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Michelle Bangura: I build systems that work for people.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Michelle Bangura | Builder and Founder">
+<meta name="twitter:description" content="I build systems that work for people. Founder of Kombra Group, Purpose Built Press, and Name It First.">
+<meta name="twitter:image" content="https://michellebglobal.com/assets/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Michelle Bangura","url":"https://michellebglobal.com/","image":"https://michellebglobal.com/assets/og-image.png","jobTitle":"Founder","worksFor":{"@type":"Organization","name":"Kombra Group","url":"https://kombragroup.com"},"email":"mailto:michelle@michellebglobal.com","sameAs":["https://linkedin.com/in/michellebangura","https://kombragroup.com","https://purposebuiltpress.com","https://nameitfirst.com"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
---navy:#1B2A4A;--navy-mid:#2D4A6A;--copper:#B87333;--copper-light:#D4955A;
---sand:#D4C5A9;--warm-white:#F7F4EF;--charcoal:#3D3D3A;--warm-gray:#8B8880;
+--navy:#1B2A4A;--navy-mid:#2D4A6A;--copper:#965820;--copper-dark:#7A4517;--copper-light:#D4955A;
+--sand:#D4C5A9;--warm-white:#F7F4EF;--charcoal:#3D3D3A;--warm-gray:#6B6860;
 --teal:#2D6A5E;--font-display:'DM Serif Display',Georgia,serif;
 --font-body:'Instrument Sans','Segoe UI',sans-serif;
 }
 html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+a:focus-visible,button:focus-visible{outline:2px solid var(--copper);outline-offset:3px;border-radius:2px}
+.skip-link{position:absolute;left:1rem;top:-100px;z-index:200;background:var(--navy);color:#fff;padding:.6rem 1rem;border-radius:4px;text-decoration:none;font-weight:600}
+.skip-link:focus{top:.75rem}
 body{font-family:var(--font-body);color:var(--charcoal);background:var(--warm-white);line-height:1.7;-webkit-font-smoothing:antialiased}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,244,239,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,197,169,.3);padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between}
-.nav-mark{font-family:var(--font-display);font-size:1.15rem;color:var(--navy);text-decoration:none;letter-spacing:-.01em}
+.nav-mark{display:inline-block;padding:.6rem 0;font-family:var(--font-display);font-size:1.15rem;color:var(--navy);text-decoration:none;letter-spacing:-.01em}
 .nav-links{display:flex;gap:2rem;list-style:none}
 .nav-links a{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:2.5px;color:var(--warm-gray);text-decoration:none;transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:var(--copper)}
 .nav-cta{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--warm-white);background:var(--copper);padding:.55rem 1.4rem;border-radius:6px;text-decoration:none;transition:background .2s}
-.nav-cta:hover{background:var(--copper-light)}
-.menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.nav-cta:hover{background:var(--copper-dark)}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;padding:10px;min-width:44px;min-height:44px}
 .menu-btn span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:all .3s}
 
 /* SECTIONS */
@@ -43,20 +68,20 @@ section{padding:6rem 2rem}
 .hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5vw,3.6rem);color:var(--navy);line-height:1.15;margin-bottom:1.2rem;font-weight:400}
 .hero p{font-size:1.1rem;color:var(--warm-gray);max-width:600px;margin-bottom:2.5rem}
 .hero-cta{display:inline-block;font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:2.5px;color:var(--warm-white);background:var(--copper);padding:.75rem 2rem;border-radius:6px;text-decoration:none;transition:all .2s}
-.hero-cta:hover{background:var(--copper-light);transform:translateY(-1px)}
+.hero-cta:hover{background:var(--copper-dark);transform:translateY(-1px)}
 
 /* PILLARS */
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin:3rem 0}
 .pillar{padding:2rem;border:1px solid rgba(212,197,169,.4);border-radius:12px;transition:border-color .3s}
 .pillar:hover{border-color:var(--copper)}
 .pillar-label{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--copper);margin-bottom:.75rem}
-.pillar h3{font-family:var(--font-display);font-size:1.3rem;color:var(--navy);margin-bottom:.5rem;font-weight:400}
+.pillar h2{font-family:var(--font-display);font-size:1.3rem;color:var(--navy);margin-bottom:.5rem;font-weight:400}
 .pillar p{font-size:.9rem;color:var(--warm-gray)}
 
 /* PROOF */
 .proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:2rem 0}
 .proof-card{padding:1.5rem;background:white;border-radius:10px;border:1px solid rgba(212,197,169,.25)}
-.proof-card h4{font-family:var(--font-display);font-size:1.05rem;color:var(--navy);margin-bottom:.35rem;font-weight:400}
+.proof-card h2{font-family:var(--font-display);font-size:1.05rem;color:var(--navy);margin-bottom:.35rem;font-weight:400}
 .proof-card p{font-size:.85rem;color:var(--warm-gray)}
 
 /* SECTION HEADERS */
@@ -96,15 +121,15 @@ section{padding:6rem 2rem}
 
 /* SPEAKING */
 .speaking-topic{padding:1.25rem 0;border-bottom:1px solid rgba(212,197,169,.2)}
-.speaking-topic h4{font-family:var(--font-display);font-size:1.05rem;color:var(--navy);font-weight:400}
+.speaking-topic h3{font-family:var(--font-display);font-size:1.05rem;color:var(--navy);font-weight:400}
 .speaking-topic p{font-size:.85rem;color:var(--warm-gray);margin-top:.25rem}
 
 /* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin:2rem 0}
 .contact-method{margin-bottom:1.5rem}
-.contact-method label{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--warm-gray);display:block;margin-bottom:.3rem}
 .contact-method a,.contact-method span{font-size:1rem;color:var(--navy);text-decoration:none}
 .contact-method a:hover{color:var(--copper)}
+.contact-label{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--warm-gray);display:block;margin-bottom:.3rem}
 .intake-options{list-style:none;display:flex;flex-direction:column;gap:.5rem}
 .intake-options li{font-size:.9rem;color:var(--charcoal);padding:.5rem 0;display:flex;align-items:center;gap:.5rem}
 .intake-options li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--copper);flex-shrink:0}
@@ -115,34 +140,43 @@ footer a{color:var(--copper-light);text-decoration:none}
 footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(255,255,255,.8);margin-bottom:.5rem}
 
 /* RESPONSIVE */
+@media(max-width:1100px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--warm-white);padding:.75rem 1.5rem 1.25rem;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:.75rem 0}
+  .menu-btn{display:block}
+}
+@media(max-width:420px){
+  nav{padding:0 1rem}
+  .nav-cta{padding:.55rem .9rem;letter-spacing:1.5px}
+}
 @media(max-width:768px){
   .pillars{grid-template-columns:1fr}
   .proof-grid{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
-  .nav-links{display:none}
-  .menu-btn{display:block}
   section{padding:4rem 1.25rem}
   .hero{min-height:auto;padding-top:100px;padding-bottom:3rem}
 }
 </style>
 </head>
 <body>
-
-<nav>
-  <a href="javascript:void(0)" class="nav-mark" onclick="event.preventDefault();showPage('home')">michelle bangura</a>
-  <ul class="nav-links">
-    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('home')" class="active" id="nav-home">Home</a></li>
-    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('build')" id="nav-build">What I build</a></li>
-    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('consulting')" id="nav-consulting">Consulting</a></li>
-    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('work')" id="nav-work">Portfolio</a></li>
-    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('about')" id="nav-about">About</a></li>
-    <li><a href="javascript:void(0)" onclick="event.preventDefault();showPage('contact')" id="nav-contact">Contact</a></li>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav aria-label="Main">
+  <a href="#home" class="nav-mark">michelle bangura</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home" class="active" aria-current="page" id="nav-home">Home</a></li>
+    <li><a href="#build"  id="nav-build">What I build</a></li>
+    <li><a href="#consulting"  id="nav-consulting">Consulting</a></li>
+    <li><a href="#work"  id="nav-work">Portfolio</a></li>
+    <li><a href="#about"  id="nav-about">About</a></li>
+    <li><a href="#contact"  id="nav-contact">Contact</a></li>
     <li><a href="/blog/" id="nav-blog">Blog</a></li>
   </ul>
-  <a href="javascript:void(0)" class="nav-cta" onclick="event.preventDefault();showPage('contact')">Let's talk</a>
-  <button class="menu-btn" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  <a href="#contact" class="nav-cta">Let's talk</a>
+  <button class="menu-btn" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
 </nav>
 
+<main id="main" tabindex="-1">
 <!-- HOME -->
 <div class="page active" id="page-home">
   <section class="hero">
@@ -150,7 +184,7 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
       <div class="hero-content">
         <h1>I build systems that work for people.</h1>
         <p>20 years operating across 4 continents and 52 countries. First-generation American. I founded Kombra Group, built Purpose Built Press (1,200+ titles), and launched Name It First. I also ran $40M government modernizations and pandemic response platforms that scaled to tens of millions of users. All of it is still true at the same time.</p>
-        <a href="javascript:void(0)" class="hero-cta" onclick="event.preventDefault();showPage('contact')">Let's talk &rarr;</a>
+        <a href="#contact" class="hero-cta">Let's talk &rarr;</a>
       </div>
     </div>
   </section>
@@ -160,36 +194,36 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
       <div class="pillars">
         <div class="pillar">
           <div class="pillar-label">Operate</div>
-          <h3>I walk into organizations and make them work.</h3>
+          <h2>I walk into organizations and make them work.</h2>
           <p>People first, process second, technology third. I diagnose the human system underneath the operational failure and redesign it so the whole organization delivers. The diagnosis is rarely just the technology.</p>
         </div>
         <div class="pillar">
           <div class="pillar-label">Build</div>
-          <h3>I design, architect, and launch from zero.</h3>
+          <h2>I design, architect, and launch from zero.</h2>
           <p>Translating ambiguous concepts into fully realized systems with clear architecture, defined operating models, and measurable outcomes. Regulated commerce platforms, civic technology, predictive maintenance, fraud detection.</p>
         </div>
         <div class="pillar">
           <div class="pillar-label">Found</div>
-          <h3>I create enterprises that solve real problems.</h3>
-          <p>Kombra Group (Delaware C-Corp) &mdash; the holding company. Purpose Built Press &mdash; 1,200+ structured self-knowledge tools built on clinical research. Name It First &mdash; the consumer library and assessment engine. Bright Standard &mdash; live EdTech platform. KombraCare &mdash; portable caregiving profiles. Heritage Vault. Return and Build.</p>
+          <h2>I create enterprises that solve real problems.</h2>
+          <p>Kombra Group (Delaware C-Corp): the holding company. Purpose Built Press: 1,200+ structured self-knowledge tools built on clinical research. Name It First: the consumer library and assessment engine. Bright Standard: live EdTech platform. KombraCare: portable caregiving profiles. Heritage Vault. Return and Build.</p>
         </div>
       </div>
 
       <div class="proof-grid">
         <div class="proof-card">
-          <h4>Major housing authority modernization</h4>
+          <h2>Major housing authority modernization</h2>
           <p>$40M program. 400,000+ residents served. 24 legacy systems consolidated. COBOL-to-cloud.</p>
         </div>
         <div class="proof-card">
-          <h4>Pandemic response platform</h4>
+          <h2>Pandemic response platform</h2>
           <p>Scaled to tens of millions of users within weeks of deployment.</p>
         </div>
         <div class="proof-card">
-          <h4>State election infrastructure</h4>
+          <h2>State election infrastructure</h2>
           <p>Hundreds of millions of voter records. Zero-error migration. Zero-trust architecture.</p>
         </div>
         <div class="proof-card">
-          <h4>Sustainable communities, West Africa</h4>
+          <h2>Sustainable communities, West Africa</h2>
           <p>Land acquisition through infrastructure. Tribal negotiation through workforce development.</p>
         </div>
       </div>
@@ -206,28 +240,28 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
         <div class="section-label">Design judgment</div>
         <p style="font-size:1.05rem;color:var(--navy);line-height:1.8;margin-bottom:1.2rem">The hardest part of my job has never been designing the system. It's been stopping other people from overdesigning it.</p>
         <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">In 20 years, the pattern is always the same: teams hardcode business rules that should be configurable. They build features nobody asked for because the architecture allows it. They optimize for technical elegance instead of the person who has to use the thing at 4pm on a Friday.</p>
-        <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">My value isn't building the most sophisticated system. It's building the right one &mdash; maintainable, human-centered, and designed to survive the first time someone who wasn't in the room makes a change.</p>
+        <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">My value isn't building the most sophisticated system. It's building the right one: maintainable, human-centered, and designed to survive the first time someone who wasn't in the room makes a change.</p>
       </div>
 
       <!-- SYSTEMS THINKING -->
       <div style="margin:3rem 0;max-width:640px">
         <div class="section-label">Systems thinking</div>
         <p style="font-size:1.05rem;color:var(--navy);line-height:1.8;margin-bottom:1.2rem">I don't just solve for the immediate problem. I identify patterns and design systems that can be reused, modularized, and productized.</p>
-        <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">Every engagement becomes input into a broader system. I consistently move from bespoke consulting to platform thinking &mdash; turning one-off solutions into configurable architectures and scalable products. This is the bridge between consulting and venture creation.</p>
+        <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">Every engagement becomes input into a broader system. I consistently move from bespoke consulting to platform thinking, turning one-off solutions into configurable architectures and scalable products. This is the bridge between consulting and venture creation.</p>
       </div>
 
       <!-- DECISION SYSTEMS -->
       <div style="margin:3rem 0;max-width:640px">
         <div class="section-label">Decision system design</div>
         <p style="font-size:1.05rem;color:var(--navy);line-height:1.8;margin-bottom:1.2rem">I design decision systems, not just solutions.</p>
-        <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">Most organizations fail because decision-making is inconsistent, unclear, or undocumented. I make decision logic explicit &mdash; defining what decisions exist, who owns them, what inputs are required, and how outcomes are measured. This ensures organizations can operate effectively long after I leave.</p>
+        <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">Most organizations fail because decision-making is inconsistent, unclear, or undocumented. I make decision logic explicit by defining what decisions exist, who owns them, what inputs are required, and how outcomes are measured. This ensures organizations can operate effectively long after I leave.</p>
       </div>
 
       <!-- SALES / STORYTELLING -->
       <div style="margin:3rem 0;max-width:640px">
         <div class="section-label">How I sell</div>
         <p style="font-size:1.05rem;color:var(--navy);line-height:1.8;margin-bottom:1.2rem">I tell the story wearing the user's hat.</p>
-        <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">I drive conversion by diagnosing what customers actually need &mdash; often before they can articulate it &mdash; and aligning solutions directly to their operational pain, decision triggers, and desired outcomes. I translate complex technical architecture into language that lands with executives, evaluators, and end users.</p>
+        <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">I drive conversion by diagnosing what customers actually need (often before they can articulate it) and aligning solutions directly to their operational pain, decision triggers, and desired outcomes. I translate complex technical architecture into language that lands with executives, evaluators, and end users.</p>
         <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">Then I align the entire team on why the solution is excellent, how to communicate that to the customer, and how to integrate it into existing operations with the least friction. That's why every competitive proposal I've led has made the shortlist.</p>
       </div>
 
@@ -252,34 +286,34 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
     <div class="container">
       <div class="section-label">Builder + Founder</div>
       <h2 class="section-title">I don't just optimize existing systems. I build new ones.</h2>
-      <p class="section-intro">Kombra Group is a venture studio where I design, architect, and deploy businesses that solve real operational problems &mdash; using the same diagnostic discipline I've applied to $500M+ in enterprise programs.</p>
+      <p class="section-intro">Kombra Group is a venture studio where I design, architect, and deploy businesses that solve real operational problems, using the same diagnostic discipline I've applied to $500M+ in enterprise programs.</p>
 
       <div class="venture-card">
-        <div class="venture-status">Active &mdash; Publisher</div>
-        <h3>Purpose Built Press &mdash; <a href="https://purposebuiltpress.com" style="color:var(--copper);text-decoration:none">purposebuiltpress.com</a></h3>
-        <p>Structured self-knowledge tools built on clinical research &mdash; workbooks, journals, and conversation guides that end with a document you sign and act on. 1,200+ titles covering relationships, identity, family, recovery, career, parenting, finances, faith, and professional practice. Enterprise licensing for organizations deploying AI: $13&ndash;25 per employee.</p>
+        <div class="venture-status">Active · Publisher</div>
+        <h3>Purpose Built Press · <a href="https://purposebuiltpress.com" style="color:var(--copper);text-decoration:none">purposebuiltpress.com</a></h3>
+        <p>Structured self-knowledge tools built on clinical research: workbooks, journals, and conversation guides that end with a document you sign and act on. 1,200+ titles covering relationships, identity, family, recovery, career, parenting, finances, faith, and professional practice. Enterprise licensing for organizations deploying AI: $13&ndash;25 per employee.</p>
       </div>
 
       <div class="venture-card">
-        <div class="venture-status">Active &mdash; Consumer brand</div>
-        <h3>Name It First &mdash; <a href="https://nameitfirst.com" style="color:var(--copper);text-decoration:none">nameitfirst.com</a></h3>
+        <div class="venture-status">Active · Consumer brand</div>
+        <h3>Name It First · <a href="https://nameitfirst.com" style="color:var(--copper);text-decoration:none">nameitfirst.com</a></h3>
         <p>If you can name it, you can create it. The consumer-facing library and assessment engine: you describe where you are right now, and it finds the right tool for that. Built on the same structured-question methodology as Purpose Built Press. The name is the brief.</p>
       </div>
 
       <div class="venture-card">
-        <div class="venture-status">Live &mdash; EdTech platform</div>
-        <h3>Bright Standard &mdash; <a href="https://thebrightstandard.com" style="color:var(--copper);text-decoration:none">thebrightstandard.com</a></h3>
+        <div class="venture-status">Live · EdTech platform</div>
+        <h3>Bright Standard · <a href="https://thebrightstandard.com" style="color:var(--copper);text-decoration:none">thebrightstandard.com</a></h3>
         <p>The educator and parent platform for intentional child development. Lesson library scored on five dimensions. 164,532 education standards loaded. Stripe billing live. Built for teachers who want to know exactly why they chose what they put in front of a child.</p>
       </div>
 
       <div class="venture-card">
-        <div class="venture-status">Prelaunch &mdash; Caregiving platform</div>
+        <div class="venture-status">Prelaunch · Caregiving platform</div>
         <h3>KombraCare</h3>
         <p>A portable, structured care profile that follows the person you love across every caregiver transition. FHIR/SNOMED export. The origin is personal: February 2025, autism diagnoses for my twin nephews. The platform was the thing I needed and couldn't find.</p>
       </div>
 
       <div class="venture-card">
-        <div class="venture-status">Prelaunch &mdash; Platform</div>
+        <div class="venture-status">Prelaunch · Platform</div>
         <h3>Heritage Vault</h3>
         <p>Culturally-specific family storytelling archive. Audio recording, family tree, identity lens. Applied the same canonical question architecture I use for the workbook library to the question of who your family is and where they came from.</p>
       </div>
@@ -288,7 +322,7 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
         I've architected regulated platforms handling hundreds of millions of records, built real-time pricing engines, and designed civic technology used by millions. I apply that same rigor to building my own ventures. The difference is I get to choose the problem.
       </div>
 
-      <p class="section-intro">If you want to back a founder who builds with the discipline of a 20-year enterprise operator &mdash; <a href="javascript:void(0)" onclick="event.preventDefault();showPage('contact')" style="color:var(--copper)">start here</a>. For consulting and business services, visit <a href="https://kombragroup.com" target="_blank" style="color:var(--copper)">kombragroup.com</a>.</p>
+      <p class="section-intro">If you want to back a founder who builds with the discipline of a 20-year enterprise operator, <a href="#contact" style="color:var(--copper)">start here</a>. For consulting and business services, visit <a href="https://kombragroup.com" target="_blank" rel="noopener" style="color:var(--copper)">kombragroup.com</a>.</p>
     </div>
   </section>
 </div>
@@ -297,14 +331,14 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
 <div class="page" id="page-consulting">
   <section style="padding-top:120px">
     <div class="container">
-      <div class="section-label">Consulting &mdash; via Kombra Group</div>
+      <div class="section-label">Consulting via Kombra Group</div>
       <h2 class="section-title">The operational work that funds the ventures.</h2>
       <div style="max-width:640px;margin-bottom:2rem">
         <p style="font-size:1.05rem;color:var(--navy);line-height:1.8;margin-bottom:1.2rem">I run diagnostic engagements for organizations where the work isn't flowing. AI platform companies competing against incumbents. Government programs off the rails. Operational failures that everyone has named but nobody has fixed. The diagnosis is rarely just the technology.</p>
         <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">I don't arrive with pre-built conclusions. I arrive with a diagnostic methodology that's found the root cause in a single meeting across 20 years of enterprise work: $500M+ in programs, 15+ industries, 52 countries. Everything on the portfolio page is real and checkable.</p>
         <p style="font-size:.95rem;color:var(--warm-gray);margin-bottom:1rem">The consulting practice is run through Kombra Group. The ventures it funds are the ones on this page. The disciplines are the same: diagnosis first, structure before action, explicit over implicit, and never optimize for the person who isn't in the room.</p>
       </div>
-      <div style="margin-bottom:2.5rem"><a href="https://kombragroup.com" target="_blank" style="display:inline-block;padding:.7rem 1.5rem;background:var(--copper);color:var(--warm-white);border-radius:6px;text-decoration:none;font-weight:600;font-size:.85rem">See services at Kombra Group &rarr;</a></div>
+      <div style="margin-bottom:2.5rem"><a href="https://kombragroup.com" target="_blank" rel="noopener" style="display:inline-block;padding:.7rem 1.5rem;background:var(--copper);color:var(--warm-white);border-radius:6px;text-decoration:none;font-weight:600;font-size:.85rem">See services at Kombra Group &rarr;</a></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin-bottom:2.5rem;text-align:center">
         <div><div style="font-family:var(--font-display);font-size:1.4rem;color:var(--navy)">$500M+</div><div style="font-size:.7rem;color:var(--warm-gray);text-transform:uppercase;letter-spacing:1px">Programs delivered</div></div>
         <div><div style="font-family:var(--font-display);font-size:1.4rem;color:var(--navy)">15+</div><div style="font-size:.7rem;color:var(--warm-gray);text-transform:uppercase;letter-spacing:1px">Industries</div></div>
@@ -314,30 +348,30 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
       </div>
       <div style="margin:2rem 0;padding:1.5rem;border-left:3px solid var(--copper);background:rgba(184,115,51,.04);border-radius:0 8px 8px 0;max-width:640px">
         <div style="font-weight:600;color:var(--navy);margin-bottom:.75rem;font-size:.95rem">How I actually diagnose</div>
-        <p style="font-size:.88rem;color:var(--charcoal);margin-bottom:.6rem">I don't start with the technology. I start with job descriptions. I read every role touching the delivery pipeline &mdash; sales, solutions engineering, customer success, product, marketing &mdash; and map the workflow between them. Where does information move? Who creates what, when, and for whom? Where does ownership get ambiguous?</p>
-        <p style="font-size:.88rem;color:var(--charcoal);margin-bottom:.6rem">The gaps between what people think their job is and what the project actually needs from them &mdash; that's where every operational failure lives. Unclear handoffs, conflicting incentives, undocumented decision rights, and the slow drift between what was designed and what's actually happening on the floor.</p>
-        <p style="font-size:.88rem;color:var(--charcoal)">Then I rebuild the workflow with explicit ownership at every step &mdash; who is responsible for creating what, when in the process, and how information moves back and forth between teams. It's a RACI, but it's also a workflow and it's also job descriptions. Most organizations have never seen all three aligned. That alignment is where the friction disappears.</p>
+        <p style="font-size:.88rem;color:var(--charcoal);margin-bottom:.6rem">I don't start with the technology. I start with job descriptions. I read every role touching the delivery pipeline (sales, solutions engineering, customer success, product, marketing) and map the workflow between them. Where does information move? Who creates what, when, and for whom? Where does ownership get ambiguous?</p>
+        <p style="font-size:.88rem;color:var(--charcoal);margin-bottom:.6rem">The gaps between what people think their job is and what the project actually needs from them: that's where every operational failure lives. Unclear handoffs, conflicting incentives, undocumented decision rights, and the slow drift between what was designed and what's actually happening on the floor.</p>
+        <p style="font-size:.88rem;color:var(--charcoal)">Then I rebuild the workflow with explicit ownership at every step: who is responsible for creating what, when in the process, and how information moves back and forth between teams. It's a RACI, but it's also a workflow and it's also job descriptions. Most organizations have never seen all three aligned. That alignment is where the friction disappears.</p>
       </div>
 
       <div class="section-label">What's included</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin:1.5rem 0 2rem">
-        <div style="padding:1.25rem;border:1px solid var(--sand);border-radius:8px"><div style="font-weight:600;color:var(--navy);margin-bottom:.5rem">Week 1&ndash;2: Diagnostic</div><p style="font-size:.85rem;color:var(--warm-gray)">Sales motion audit. Rep interviews. Collateral review. Competitive intelligence. Friction map &mdash; where deals die and why.</p></div>
+        <div style="padding:1.25rem;border:1px solid var(--sand);border-radius:8px"><div style="font-weight:600;color:var(--navy);margin-bottom:.5rem">Week 1&ndash;2: Diagnostic</div><p style="font-size:.85rem;color:var(--warm-gray)">Sales motion audit. Rep interviews. Collateral review. Competitive intelligence. Friction map: where deals die and why.</p></div>
         <div style="padding:1.25rem;border:1px solid var(--sand);border-radius:8px"><div style="font-weight:600;color:var(--navy);margin-bottom:.5rem">Week 3&ndash;4: Architecture</div><p style="font-size:.85rem;color:var(--warm-gray)">Enterprise sales framework. Competitive displacement narrative. Discovery question bank. Demo choreography. Sector prioritization.</p></div>
         <div style="padding:1.25rem;border:1px solid var(--sand);border-radius:8px"><div style="font-weight:600;color:var(--navy);margin-bottom:.5rem">Week 5: Build</div><p style="font-size:.85rem;color:var(--warm-gray)">Sales playbook (40-60 pages). Competitive battlecards. Buyer personas. AI-native sales process map with prompt templates.</p></div>
         <div style="padding:1.25rem;border:1px solid var(--sand);border-radius:8px"><div style="font-weight:600;color:var(--navy);margin-bottom:.5rem">Week 6: Handover</div><p style="font-size:.85rem;color:var(--warm-gray)">Full report. Team enablement session. 90-day execution plan. Hiring recommendation.</p></div>
       </div>
       <div style="margin:2rem 0;padding:1.5rem;border:1px solid var(--sand);border-radius:8px;max-width:640px">
         <div style="font-weight:600;color:var(--navy);margin-bottom:.5rem">Alternative: Deal acceleration sprint</div>
-        <p style="font-size:.9rem;color:var(--charcoal)">Not ready for the full engagement? Pick 2-3 of your most important active deals. Give me two weeks with them. I'll show you what the diagnostic produces on real pipeline &mdash; not a theoretical framework. If the lift is there, we scope the full engagement.</p>
-        <p style="font-size:.9rem;color:var(--copper);font-weight:600;margin-top:.75rem">$10,000 &mdash; $15,000. Two weeks. Applied to live pipeline.</p>
+        <p style="font-size:.9rem;color:var(--charcoal)">Not ready for the full engagement? Pick 2-3 of your most important active deals. Give me two weeks with them. I'll show you what the diagnostic produces on real pipeline, not a theoretical framework. If the lift is there, we scope the full engagement.</p>
+        <p style="font-size:.9rem;color:var(--copper);font-weight:600;margin-top:.75rem">$10,000 to $15,000. Two weeks. Applied to live pipeline.</p>
       </div>
 
       <div style="margin:2.5rem 0;padding:1.5rem;background:rgba(27,42,74,.03);border-left:3px solid var(--copper);border-radius:0 8px 8px 0;max-width:640px">
         <div style="font-weight:600;color:var(--navy);margin-bottom:.5rem">Enterprise change management</div>
-        <p style="font-size:.9rem;color:var(--charcoal)">Every AI deployment creates a workforce that needs structured support. Through Purpose Built Press, Kombra Group publishes workbooks for workforce transition &mdash; at $13-25 per employee. The consulting engagement builds the sales architecture. The book channel provides the adoption tools.</p>
+        <p style="font-size:.9rem;color:var(--charcoal)">Every AI deployment creates a workforce that needs structured support. Through Purpose Built Press, Kombra Group publishes workbooks for workforce transition at $13-25 per employee. The consulting engagement builds the sales architecture. The book channel provides the adoption tools.</p>
       </div>
       <div style="margin:2rem 0;max-width:640px"><p style="font-size:.95rem;color:var(--charcoal)"><strong>The option:</strong> Convert to a 90-day fractional engagement at $25,000/month. Or take the playbook and run it yourself. Either way, you have the work.</p></div>
-      <div style="margin-top:2rem"><a href="javascript:void(0)" onclick="event.preventDefault();showPage('contact')" style="color:var(--copper);font-weight:600;text-decoration:none">Start the conversation &rarr;</a></div>
+      <div style="margin-top:2rem"><a href="#contact" style="color:var(--copper);font-weight:600;text-decoration:none">Start the conversation &rarr;</a></div>
     </div>
   </section>
 </div>
@@ -348,24 +382,24 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
     <div class="container">
       <div class="section-label">Project portfolio</div>
       <h2 class="section-title">20 years of designing, building, and delivering systems that work.</h2>
-      <p class="section-intro">Architecture, planning, competitive capture, delivery, and rescue &mdash; across government, enterprise, and international development. Select projects from a career spanning 15+ industries and 4 continents.</p>
+      <p class="section-intro">Architecture, planning, competitive capture, delivery, and rescue across government, enterprise, and international development. Select projects from a career spanning 15+ industries and 4 continents.</p>
 
       <div style="max-width:640px;margin-bottom:2.5rem;padding:1.5rem;border-left:3px solid var(--copper);border-radius:0">
         <p style="font-size:.95rem;color:var(--charcoal);margin-bottom:.75rem">These programs operated under conditions where most fail: shifting political administrations, mid-project regulatory changes, federal oversight, security and accessibility mandates, intense public accountability, and distributed teams spanning the US, Europe, and India.</p>
-        <p style="font-size:.95rem;color:var(--charcoal)">My role across these engagements was rarely just one thing. I designed solutions, sold them to government evaluators by telling the story from the user's perspective, built the teams, mentored the architects, rescued the ones that were failing, and ensured that what we delivered was maintainable &mdash; not just impressive.</p>
+        <p style="font-size:.95rem;color:var(--charcoal)">My role across these engagements was rarely just one thing. I designed solutions, sold them to government evaluators by telling the story from the user's perspective, built the teams, mentored the architects, rescued the ones that were failing, and ensured that what we delivered was maintainable, not just impressive.</p>
       </div>
 
       <div class="portfolio-group">
         <h3>Government &amp; public sector</h3>
 
         <div class="portfolio-item">
-          <strong>Major metropolitan housing authority &mdash; Enterprise modernization</strong>
+          <strong>Major metropolitan housing authority: Enterprise modernization</strong>
           <p>$40M program modernizing legacy mainframe systems serving 400,000+ residents. End-to-end tenant lifecycle platform, work order management, HUD reporting automation, and cloud migration roadmap. FedRAMP-aligned security controls.</p>
           <div class="metric">Reduced maintenance resolution cycle time. Increased federal audit readiness.</div>
         </div>
 
         <div class="portfolio-item">
-          <strong>State board of elections &mdash; Public matching funds &amp; voter systems</strong>
+          <strong>State board of elections: Public matching funds &amp; voter systems</strong>
           <p>Secure, transparent campaign finance platform with voter registration lifecycle management. Automated contribution validation, fraud detection, and identity verification. Zero-trust architecture with immutable audit trails.</p>
           <div class="metric">Reduced manual validation burden. Enhanced public trust via digital auditability.</div>
         </div>
@@ -382,24 +416,24 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
         </div>
 
         <div class="portfolio-item">
-          <strong>State workforce rehabilitation agency &mdash; Case management</strong>
+          <strong>State workforce rehabilitation agency: Case management</strong>
           <p>Human-centered caseworker UX redesign, integrated provider claims adjudication, outcome-based KPI framework, and federal data-sharing API development.</p>
         </div>
 
         <div class="portfolio-item">
-          <strong>State department of public health &mdash; Disease surveillance &amp; licensing</strong>
+          <strong>State department of public health: Disease surveillance &amp; licensing</strong>
           <p>Real-time disease reporting pipelines, nursing home licensing and inspection management, quality scorecards, and outbreak forecasting analytics.</p>
           <div class="metric">100% digitization of field inspection data. 3x faster deficiency identification.</div>
         </div>
 
         <div class="portfolio-item">
-          <strong>State economic security agency &mdash; Fraud recovery</strong>
+          <strong>State economic security agency: Fraud recovery</strong>
           <p>Automated accounts receivable and fraud scoring engine with treasury integrations and collection routing.</p>
           <div class="metric">$15M+ projected recovery in Year 1. 80% reduction in manual routing.</div>
         </div>
 
         <div class="portfolio-item">
-          <strong>State finance authority &mdash; Grants &amp; compliance</strong>
+          <strong>State finance authority: Grants &amp; compliance</strong>
           <p>Grant lifecycle management with risk scoring, automated compliance tracking, and federal drawdown reporting.</p>
           <div class="metric">45% acceleration in fund disbursement. Zero-defect federal reporting.</div>
         </div>
@@ -409,24 +443,24 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
         <h3>Enterprise &amp; regulated industry</h3>
 
         <div class="portfolio-item">
-          <strong>Regulated precious metals firm &mdash; End-to-end commerce platform</strong>
+          <strong>Regulated precious metals firm: End-to-end commerce platform</strong>
           <p>Real-time spot pricing, intelligent call routing, compliance recording, wealth profile enrichment, inventory management, and marketing automation. PCI-compliant payment processing.</p>
           <div class="metric">35% increase in lead-to-close rate. 100% compliance adherence.</div>
         </div>
 
         <div class="portfolio-item">
-          <strong>Global health insurance group &mdash; Multi-instance platform audit</strong>
+          <strong>Global health insurance group: Multi-instance platform audit</strong>
           <p>Audit and optimization strategy across 50 global Salesforce instances. Assessed capabilities, identified consolidation opportunities, and designed the rationalization roadmap.</p>
         </div>
 
         <div class="portfolio-item">
-          <strong>Aviation authority &mdash; Predictive asset management</strong>
+          <strong>Aviation authority: Predictive asset management</strong>
           <p>IoT sensor ingestion, predictive failure modeling, work order automation, and maintenance budget forecasting for critical infrastructure.</p>
           <div class="metric">25% reduction in unplanned downtime. 40% increase in crew utilization.</div>
         </div>
 
         <div class="portfolio-item">
-          <strong>Global manufacturing firm &mdash; Agile center of excellence</strong>
+          <strong>Global manufacturing firm: Agile center of excellence</strong>
           <p>Enterprise SAFe rollout across distributed engineering teams. CI/CD governance, Definition-of-Done frameworks, and cross-border collaboration optimization.</p>
           <div class="metric">70% reduction in deployment rollbacks. 3x acceleration in time-to-market.</div>
         </div>
@@ -441,7 +475,7 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
       <div class="portfolio-group">
         <h3>International development</h3>
         <div class="portfolio-item">
-          <strong>Africa Tomorrow &mdash; Sierra Leone</strong>
+          <strong>Africa Tomorrow: Sierra Leone</strong>
           <p>Founded sustainable community development initiative. Led all operations from site acquisition through infrastructure design, tribal negotiation, government relations, and workforce capacity building. Transitioned to local management in 2022; initiative continues under local stewardship.</p>
         </div>
       </div>
@@ -499,29 +533,29 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
       <h2 class="section-title">Operator. Builder. Founder.</h2>
 
       <div class="about-content">
-        <p>First-generation American. Parents from Sierra Leone. I started my career managing street canvassing teams across Manhattan and Brooklyn &mdash; recruiting, training, and motivating distributed teams in high-turnover political campaigns. That's where I learned to read people, build teams under pressure, and understand that every operational problem is a human problem first.</p>
+        <p>First-generation American. Parents from Sierra Leone. I started my career managing street canvassing teams across Manhattan and Brooklyn: recruiting, training, and motivating distributed teams in high-turnover political campaigns. That's where I learned to read people, build teams under pressure, and understand that every operational problem is a human problem first.</p>
 
-        <p>From there I moved into accounting and financial reporting, then into the Salesforce ecosystem, where I spent over a decade not as a coder but as the person who understood the business, the users, and the politics &mdash; and translated that into systems designed for the comfort of the people using them.</p>
+        <p>From there I moved into accounting and financial reporting, then into the Salesforce ecosystem, where I spent over a decade not as a coder but as the person who understood the business, the users, and the politics, and translated that into systems designed for the comfort of the people using them.</p>
 
-        <p>I've worked across 15+ industries, in the US, UK, Germany, Australia, and West Africa. I've led pre-sales and competitive bidding that achieved a 100% shortlist rate across two firms. I've been the person deployed into failing programs to diagnose what's broken &mdash; and the diagnosis was rarely just the technology.</p>
+        <p>I've worked across 15+ industries, in the US, UK, Germany, Australia, and West Africa. I've led pre-sales and competitive bidding that achieved a 100% shortlist rate across two firms. I've been the person deployed into failing programs to diagnose what's broken, and the diagnosis was rarely just the technology.</p>
 
         <div class="about-highlight">I ask the right question, in the right room, at the right time, and the whole system reorganizes around the answer.</div>
 
-        <p>Now I operate on three tracks simultaneously: I <strong>operate</strong> &mdash; walking into organizations to fix the human systems that make everything else work. I <strong>build</strong> &mdash; Purpose Built Press (1,200+ structured self-knowledge tools), Name It First (the consumer library and assessment engine), Bright Standard (live EdTech platform), KombraCare (portable caregiving profiles), Heritage Vault (family archive). And I <strong>found</strong> &mdash; Kombra Group (Delaware C-Corp) is the holding company for all of it.</p>
+        <p>Now I operate on three tracks simultaneously: I <strong>operate</strong>, walking into organizations to fix the human systems that make everything else work. I <strong>build</strong>: Purpose Built Press (1,200+ structured self-knowledge tools), Name It First (the consumer library and assessment engine), Bright Standard (live EdTech platform), KombraCare (portable caregiving profiles), Heritage Vault (family archive). And I <strong>found</strong>: Kombra Group (Delaware C-Corp) is the holding company for all of it.</p>
 
         <p>What sets me apart is the combination of <strong>design judgment</strong> (stopping teams from overdesigning), <strong>systems thinking</strong> (turning one-off consulting into reusable, scalable platforms), <strong>decision system design</strong> (making organizational logic explicit so it survives my departure), and <strong>narrative ability</strong> (telling the story from the user's perspective so the right people say yes).</p>
 
-        <p>I'm AI-native &mdash; not experimenting, operating. I use Claude, Gemini, and local models daily for operational design, compliance analysis, and process automation. I design AI governance frameworks for regulated industries where getting it wrong has real consequences for real people.</p>
+        <p>I'm AI-native. Not experimenting. Operating. I use Claude, Gemini, and local models daily for operational design, compliance analysis, and process automation. I design AI governance frameworks for regulated industries where getting it wrong has real consequences for real people.</p>
 
-        <p><strong>Languages:</strong> English natively. Conversational German and Spanish &mdash; enough to support bilingual teams and operate across cultures.</p>
+        <p><strong>Languages:</strong> English natively. Conversational German and Spanish, enough to support bilingual teams and operate across cultures.</p>
 
-        <p><strong>Reach:</strong> 52 countries. 4 continents. I operate globally and am raising a child across multiple continents &mdash; the most challenging and rewarding operations problem of my career.</p>
+        <p><strong>Reach:</strong> 52 countries. 4 continents. I operate globally and am raising a child across multiple continents: the most challenging and rewarding operations problem of my career.</p>
 
-        <p>I took two years away from enterprise work to be a present parent, to build systems for my own life, and to rediscover what I actually want from professional work. I came back because I love it &mdash; the problems, the solutions, the stories, the teaching. I came back on my terms, with clarity about what I want and how I work best. That clarity is what I now help organizations find for themselves.</p>
+        <p>I took two years away from enterprise work to be a present parent, to build systems for my own life, and to rediscover what I actually want from professional work. I came back because I love it: the problems, the solutions, the stories, the teaching. I came back on my terms, with clarity about what I want and how I work best. That clarity is what I now help organizations find for themselves.</p>
 
-        <div class="about-highlight">5 applications. 5 perfectly targeted roles. 1 inbound recruiter within 48 hours &mdash; for a VP position at a global AI company &mdash; before the applicant had decided whether she wanted the job. That's not job searching. That's positioning.</div>
+        <div class="about-highlight">5 applications. 5 perfectly targeted roles. 1 inbound recruiter within 48 hours (for a VP position at a global AI company) before the applicant had decided whether she wanted the job. That's not job searching. That's positioning.</div>
 
-        <p style="margin-top:2rem"><a href="javascript:void(0)" onclick="event.preventDefault();showPage('contact')" style="color:var(--copper);font-weight:500">Get in touch &rarr;</a> &nbsp;&nbsp; <a href="https://kombragroup.com" style="color:var(--copper);font-weight:500" target="_blank">Kombra Group &rarr;</a> &nbsp;&nbsp; <a href="https://purposebuiltpress.com" style="color:var(--copper);font-weight:500" target="_blank">Purpose Built Press &rarr;</a> &nbsp;&nbsp; <a href="https://nameitfirst.com" style="color:var(--copper);font-weight:500" target="_blank">Name It First &rarr;</a></p>
+        <p style="margin-top:2rem"><a href="#contact" style="color:var(--copper);font-weight:500">Get in touch &rarr;</a> &nbsp;&nbsp; <a href="https://kombragroup.com" style="color:var(--copper);font-weight:500" target="_blank" rel="noopener">Kombra Group &rarr;</a> &nbsp;&nbsp; <a href="https://purposebuiltpress.com" style="color:var(--copper);font-weight:500" target="_blank" rel="noopener">Purpose Built Press &rarr;</a> &nbsp;&nbsp; <a href="https://nameitfirst.com" style="color:var(--copper);font-weight:500" target="_blank" rel="noopener">Name It First &rarr;</a></p>
       </div>
     </div>
   </section>
@@ -533,30 +567,30 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
     <div class="container">
       <div class="section-label">Contact</div>
       <h2 class="section-title">Let's talk.</h2>
-      <p class="section-intro">Whether you're looking for an operator, a builder, a strategic partner, or a founder to back &mdash; I'd like to hear what you're working on.</p>
+      <p class="section-intro">Whether you're looking for an operator, a builder, a strategic partner, or a founder to back, I'd like to hear what you're working on.</p>
 
       <div class="contact-grid">
         <div>
           <div class="contact-method">
-            <label>Email</label>
+            <span class="contact-label">Email</span>
             <a href="mailto:michelle@michellebglobal.com">michelle@michellebglobal.com</a>
           </div>
           <div class="contact-method">
-            <label>Phone</label>
-            <span>+1 415-226-9566</span>
+            <span class="contact-label">Phone</span>
+            <a href="tel:+14152269566">+1 415-226-9566</a>
           </div>
           <div class="contact-method">
-            <label>LinkedIn</label>
-            <a href="https://linkedin.com/in/michellebangura" target="_blank">linkedin.com/in/michellebangura</a>
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/michellebangura" target="_blank" rel="noopener">linkedin.com/in/michellebangura</a>
           </div>
           <div class="contact-method">
-            <label>Consulting practice</label>
-            <a href="https://kombragroup.com" target="_blank">kombragroup.com</a>
+            <span class="contact-label">Consulting practice</span>
+            <a href="https://kombragroup.com" target="_blank" rel="noopener">kombragroup.com</a>
           </div>
         </div>
         <div>
           <div class="contact-method">
-            <label>What are you looking for?</label>
+            <span class="contact-label">What are you looking for?</span>
           </div>
           <ul class="intake-options">
             <li>Fractional executive leadership</li>
@@ -572,77 +606,67 @@ footer .footer-name{font-family:var(--font-display);font-size:1.1rem;color:rgba(
       <div style="margin-top:3rem">
         <div class="section-label">Speaking topics</div>
         <div class="speaking-topic">
-          <h4>Why complex programs fail for simple reasons</h4>
-          <p>The organizational patterns that cause $20M+ technology programs to fail &mdash; and how to fix them before they start.</p>
+          <h3>Why complex programs fail for simple reasons</h3>
+          <p>The organizational patterns that cause $20M+ technology programs to fail, and how to fix them before they start.</p>
         </div>
         <div class="speaking-topic">
-          <h4>Human systems design: the operating layer nobody builds</h4>
+          <h3>Human systems design: the operating layer nobody builds</h3>
           <p>How communication architecture, decision frameworks, and team dynamics determine whether technology ever works as designed.</p>
         </div>
         <div class="speaking-topic">
-          <h4>AI governance for organizations that cannot afford to get it wrong</h4>
+          <h3>AI governance for organizations that cannot afford to get it wrong</h3>
           <p>What regulated enterprises need to build before deploying AI in production. Risk playbooks, not just feature roadmaps.</p>
         </div>
         <div class="speaking-topic">
-          <h4>The self-knowledge infrastructure gap</h4>
-          <p>Why structured self-knowledge tools &mdash; built on clinical research and ending in documents you sign &mdash; are the missing layer in every personal and professional development system.</p>
+          <h3>The self-knowledge infrastructure gap</h3>
+          <p>Why structured self-knowledge tools (built on clinical research and ending in documents you sign) are the missing layer in every personal and professional development system.</p>
         </div>
       </div>
     </div>
   </section>
 </div>
+</main>
 
 <footer>
   <div class="container">
     <div class="footer-name">Michelle Bangura</div>
     <p>Builder &middot; Founder</p>
-    <p style="margin-top:.75rem"><a href="https://kombragroup.com" target="_blank">Kombra Group</a> &nbsp;&middot;&nbsp; <a href="https://purposebuiltpress.com" target="_blank">Purpose Built Press</a> &nbsp;&middot;&nbsp; <a href="https://nameitfirst.com" target="_blank">Name It First</a> &nbsp;&middot;&nbsp; <a href="https://linkedin.com/in/michellebangura" target="_blank">LinkedIn</a></p>
+    <p style="margin-top:.75rem"><a href="https://kombragroup.com" target="_blank" rel="noopener">Kombra Group</a> &nbsp;&middot;&nbsp; <a href="https://purposebuiltpress.com" target="_blank" rel="noopener">Purpose Built Press</a> &nbsp;&middot;&nbsp; <a href="https://nameitfirst.com" target="_blank" rel="noopener">Name It First</a> &nbsp;&middot;&nbsp; <a href="https://linkedin.com/in/michellebangura" target="_blank" rel="noopener">LinkedIn</a></p>
     <p style="margin-top:1rem;font-size:.7rem">&copy; 2026 Michelle Bangura. All rights reserved.</p>
   </div>
 </footer>
 
 <script>
-function showPage(id){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+var PAGES=['home','build','consulting','work','about','contact'];
+function showPage(id,skipScroll){
+  if(PAGES.indexOf(id)<0)id='home';
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active')});
   document.getElementById('page-'+id).classList.add('active');
-  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
-  const navLink=document.getElementById('nav-'+id);
-  if(navLink)navLink.classList.add('active');
-  window.scrollTo({top:0,behavior:'smooth'});
+  document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('active');a.removeAttribute('aria-current')});
+  var navLink=document.getElementById('nav-'+id);
+  if(navLink){navLink.classList.add('active');navLink.setAttribute('aria-current','page')}
+  if(!skipScroll)window.scrollTo(0,0);
+}
+function closeMenu(){
+  document.querySelector('.nav-links').classList.remove('open');
+  var b=document.querySelector('.menu-btn');
+  b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Open menu');
 }
 function toggleMenu(){
-  const links=document.querySelector('.nav-links');
-  const btn=document.querySelector('.menu-btn');
-  if(links.classList.contains('open')){
-    links.classList.remove('open');
-    links.style.display='none';
-    btn.classList.remove('open');
-  } else {
-    links.classList.add('open');
-    links.style.display='flex';
-    links.style.flexDirection='column';
-    links.style.position='absolute';
-    links.style.top='100%';
-    links.style.left='0';
-    links.style.right='0';
-    links.style.background='var(--warm-white)';
-    links.style.padding='1.5rem';
-    links.style.gap='1rem';
-    links.style.boxShadow='0 8px 24px rgba(0,0,0,.08)';
-    btn.classList.add('open');
-  }
+  var open=document.querySelector('.nav-links').classList.toggle('open');
+  var b=document.querySelector('.menu-btn');
+  b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?'Close menu':'Open menu');
 }
-document.querySelectorAll('.nav-links a').forEach(function(a){
-  a.addEventListener('click',function(){
-    if(window.innerWidth<768){
-      var l=document.querySelector('.nav-links');
-      var b=document.querySelector('.menu-btn');
-      l.classList.remove('open');
-      l.style.display='none';
-      b.classList.remove('open');
-    }
-  });
-});
+function route(){
+  var id=location.hash.slice(1);
+  if(id==='main')return;
+  showPage(id||'home',!id);
+  closeMenu();
+}
+window.addEventListener('hashchange',route);
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',closeMenu)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu()});
+route();
 </script>
 </body>
 </html>
